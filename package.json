@@ -1,6 +1,7 @@
 {
   "name": "whichcomputerbuy",
   "version": "0.1.0",
+  "homepage":"https://muhammedcagrikurt.github.io/whichcomputerbuy",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
