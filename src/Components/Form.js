@@ -7,16 +7,22 @@ import React, {useState} from "react";
 
 const Form = () =>{
  const [score,setScore]= useState(0);
- const [scores,setScores]=useState([]);
+ //const [scores,setScores]=useState([]);
 const [name,setName]=useState("");
- const [names,setNames]=useState([]);
-  //const [laptop,setLaptop]=useState([{names:"",scores:""}])
+// const [names,setNames]=useState([]);
+ const [price,setPrice]=useState(0)
+const [laptop,setLaptop]=useState([])
   const addLaptop=()=>{
-    setScores([...scores,score]);
-    setNames([...names,name]);
+    setLaptop([...laptop,name+" : "+score.toString()])
+   // setScores([...scores,score]);
+   // setNames([...names,name]);
     //setLaptop({...laptop,names:name,scores:score})
     setName("");
     setScore(0);
+    setPrice(0);
+  }
+  const sum=()=>{
+    setScore(score+(18-price))
   }
 
     return(
@@ -48,26 +54,23 @@ const [name,setName]=useState("");
 
         <hr/>
         <h2>Güvenilirlik Durumu Seçiniz</h2>
-        <button onClick={()=>setScore(score+ 1 )}>Evet</button>
-        <button onClick={()=>setScore(score+ -1 )}>Hayır</button>
+        <button onClick={()=>setScore(score+ 3 )}>Evet</button>
+        <button onClick={()=>setScore(score+ -3 )}>Hayır</button>
 
         <hr/>
         <h2>Fiyat</h2>
+        <input  type="number" name="price" value={price} placeholder="Laptop Fiyatı" onChange={(e)=>setPrice(e.target.value)}/>
+        {console.log(price)}
+        <button onClick={sum}> Fiyatı Kaydet</button>
         <hr/>
-        {console.log(score)}
         <input type="text" name="name" value={name} placeholder="Laptop Markası/İsmi" onChange={(e)=>{setName(e.target.value)}}/>
         <button onClick={addLaptop}>Kaydet</button>
 
       <ul> 
-        <ol>
-      {names.map((names,index) => (
-          <li key={index}>{names}</li>
-        ))}</ol>
-         <ol>
-      {scores.map((scores,index) => (
-           <li key={index}>{scores}</li>
+      <ol>
+      {laptop.map((laptop,index) => (
+           <li key={index}>{laptop}</li>
          ))}</ol>
-
  
         </ul>
       
