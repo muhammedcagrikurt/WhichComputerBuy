@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/whichcomputerbuy/static/css/main.964fdded.css",
-    "main.js": "/whichcomputerbuy/static/js/main.98760ec1.js",
+    "main.css": "/whichcomputerbuy/static/css/main.0730be24.css",
+    "main.js": "/whichcomputerbuy/static/js/main.154b4373.js",
     "static/js/787.d4c3903f.chunk.js": "/whichcomputerbuy/static/js/787.d4c3903f.chunk.js",
     "index.html": "/whichcomputerbuy/index.html",
-    "main.964fdded.css.map": "/whichcomputerbuy/static/css/main.964fdded.css.map",
-    "main.98760ec1.js.map": "/whichcomputerbuy/static/js/main.98760ec1.js.map",
+    "main.0730be24.css.map": "/whichcomputerbuy/static/css/main.0730be24.css.map",
+    "main.154b4373.js.map": "/whichcomputerbuy/static/js/main.154b4373.js.map",
     "787.d4c3903f.chunk.js.map": "/whichcomputerbuy/static/js/787.d4c3903f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.964fdded.css",
-    "static/js/main.98760ec1.js"
+    "static/css/main.0730be24.css",
+    "static/js/main.154b4373.js"
   ]
 }
